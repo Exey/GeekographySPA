@@ -1,9 +1,11 @@
 <script lang="ts">
 	export let name: string;
 	import InactionCard from "./comps/InactionCard.svelte"
+	import Logo from "./comps/Logo.svelte"
 </script>
 
 <main>
+	<Logo />
 	<h1>Hello {name}!</h1>
 	<p class="intro">To do:</p>
 	<InactionCard
@@ -22,23 +24,12 @@
 </main>
 
 <style>
+	
 	main {
-		text-align: center;
-		padding: 1em;
-		max-width: 240px;
-		margin: 0 auto;
+		background-color: #303131;
+		color:white;
+		height: 100%;
 	}
 
-	h1 {
-		color: #ff3e00;
-		text-transform: uppercase;
-		font-size: 4em;
-		font-weight: 100;
-	}
-
-	@media (min-width: 640px) {
-		main {
-			max-width: none;
-		}
-	}
+	
 </style>
