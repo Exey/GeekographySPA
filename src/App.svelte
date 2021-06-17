@@ -6,7 +6,7 @@
 
 <main>
 	<Logo />
-	<h1>Hello {name}!</h1>
+	<h1>Hi {name}!</h1>
 	<p class="intro">To do:</p>
 	<InactionCard
 		title="Learn Svelte and TypeScript"
